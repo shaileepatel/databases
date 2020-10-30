@@ -1,7 +1,5 @@
 var db = require('../db');
 
-db.connection.connect();
-
 module.exports = {
   getAll: function () {},
   create: function (name, callback) {

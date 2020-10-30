@@ -6,7 +6,6 @@ module.exports = {
     res.end();
   },
   post: function (req, res) {
-    console.log(req.body);
     models.users.create(req.body.username, (err, data) => {
       if (err) {
         res.send(err);
